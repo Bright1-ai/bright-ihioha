@@ -1,113 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Portfolio</title>
+    <meta name="description" content="Ihioha Bright - Professional Website Developer. Check out my portfolio for modern, responsive, and dynamic websites.">
+    <meta name="keywords" content="Ihioha Bright, Website Developer, Portfolio, Web Design, Frontend Development, HTML, CSS, JavaScript, React, Node.js, Web Development, Freelance Developer">
+    <meta name="author" content="Ihioha Bright">
+    <meta name="robots" content="index, follow"> <!-- Tells search engines to index and follow the page -->
+    <meta name="revisit-after" content="7 days"> <!-- Tells search engines to revisit the page after 7 days -->
+
+    <!-- Open Graph Meta Tags (for Social Media Sharing) -->
+    <meta property="og:title" content="Ihioha Bright - Website Developer">
+    <meta property="og:description" content="Professional Website Developer specializing in modern, responsive, and dynamic websites.">
+    <meta property="og:image" content="https://example.com/your-image.jpg"> <!-- Replace with your image URL -->
+    <meta property="og:url" content="https://bright1-ai.github.io/bright-ihioha/"> <!-- Replace with your website URL -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ihioha Bright Portfolio">
+
+    <!-- Twitter Meta Tags (for Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ihioha Bright - Website Developer">
+    <meta name="twitter:description" content="Professional Website Developer specializing in modern, responsive, and dynamic websites.">
+    <meta name="twitter:image" content="https://example.com/your-image.jpg"> <!-- Replace with your image URL -->
+    <meta name="twitter:site" content="@ihioha53992"> <!-- Replace with your Twitter handle -->
+    <meta name="twitter:creator" content="@ihioha53992"> <!-- Replace with your Twitter handle -->
+
+    <!-- Canonical Link (to avoid duplicate content issues) -->
+    <link rel="canonical" href="https://example.com"> <!-- Replace with your website URL -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./asset/cdn_c38bc826-6245-4bd6-9ebf-5bbf5a3a9eba_0.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/asset/cdn_c38bc826-6245-4bd6-9ebf-5bbf5a3a9eba_0.png">
+
+    <!-- Theme Color (for Mobile Browsers) -->
+    <meta name="theme-color" content="#007BFF">
+
+    <!-- Apple Touch Icon (for iOS Devices) -->
+    <link rel="apple-touch-icon" href="./asset/apple-logo-apple-icon-transparent-free-png.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/apple-logo-apple-icon-transparent-free-png.png">
+
+    <!-- Microsoft Tiles (for Windows Tiles) -->
+    <meta name="msapplication-TileColor" content="#007BFF">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <!-- Facebook App ID (if you have a Facebook App) -->
+    <meta property="fb:app_id" content="your-facebook-app-id">
+
+    <!-- Google Site Verification (for Google Search Console) -->
+    <meta name="google-site-verification" content="your-google-site-verification-code">
+
+    <!-- Bing Site Verification (for Bing Webmaster Tools) -->
+    <meta name="msvalidate.01" content="your-bing-site-verification-code">
+
+    <!-- Language Tags -->
+    <meta http-equiv="content-language" content="en">
+    <meta name="language" content="English">
+
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Refresh and Redirect (Optional) -->
+    <!-- <meta http-equiv="refresh" content="5;url=https://example.com/new-page"> -->
+
+    <!-- Structured Data (JSON-LD for Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ihioha Bright",
+        "jobTitle": "Website Developer",
+        "url": "https://bright1-ai.github.io/bright-ihioha/",
+        "sameAs": [
+            "https://github.com/Bright1-ai",
+            "https://ng.linkedin.com/in/bezly-bright-07445730a",
+            "https://x.com/ihioha53992?t=8FtnpV_PD5i8F4EpSUDgrA&s=09"
+        ],
+        "description": "Professional Website Developer specializing in modern, responsive, and dynamic websites.",
+        "image": "https://example.com/your-image.jpg",
+        "email": "tmplixy@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Onitsha",
+            "addressRegion": "Anambra",
+            "postalCode": "12345",
+            "addressCountry": "Nigeria"
+        }
+    }
+    </script>
+
+    <!-- Additional Structured Data for Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://bright1-ai.github.io/bright-ihioha/",
+        "name": "Ihioha Bright Portfolio",
+        "description": "Professional Website Developer specializing in modern, responsive, and dynamic websites.",
+        "author": {
+            "@type": "Person",
+            "name": "Ihioha Bright"
+        }
+    }
+    </script>
+
+    <title>Ihioha Bright - Website Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">MyPortfolio</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <canvas id="particle-bg"></canvas>
+    <!-- Hero Section -->
+    <section id="hero">
         <div class="hero-content">
-            <h1>Welcome to My Digital World</h1>
-            <p>Innovative, cutting-edge solutions to bring your vision to life.</p>
-            <a href="#contact" class="cta">Let’s Work Together</a>
+            <h1>Hello, I'm <span>Ihioha Bright</span></h1>
+            <p>A Professional Website Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
+    <!-- About Me Section -->
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I’m a web developer with a passion for crafting futuristic, responsive, and user-friendly websites.
-                With years of experience, I’ve honed my skills to deliver outstanding solutions tailored to your needs.
-            </p>
-            <img src="about-me.jpg" alt="About Me">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hi, I'm Ihioha Bright, a passionate website developer with expertise in creating modern, responsive, and user-friendly websites. I specialize in HTML, CSS, JavaScript, and various frameworks to bring ideas to life.</p>
         </div>
     </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Project 1">
-                    <div class="overlay">
-                        <h3>E-commerce Platform</h3>
-                        <p>A feature-rich, modern e-commerce solution with custom filters and seamless payment integrations.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Project 2">
-                    <div class="overlay">
-                        <h3>Portfolio Website</h3>
-                        <p>A stunning, interactive portfolio site for a creative professional.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project3.jpg" alt="Project 3">
-                    <div class="overlay">
-                        <h3>Corporate Website</h3>
-                        <p>SEO-optimized corporate site to enhance online visibility for businesses.</p>
-                    </div>
-                </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <p>React</p>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>What I Offer</h2>
-            <div class="services-grid">
-                <div class="service">
-                    <h3>Web Design</h3>
-                    <p>Creative designs that captivate users.</p>
-                </div>
-                <div class="service">
-                    <h3>Web Development</h3>
-                    <p>Efficient and responsive coding practices.</p>
-                </div>
-                <div class="service">
-                    <h3>SEO Optimization</h3>
-                    <p>Boosting your site’s visibility on search engines.</p>
-                </div>
-                <div class="service">
-                    <h3>E-Commerce Solutions</h3>
-                    <p>Custom online stores tailored to your business needs.</p>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="./asset/React-Js-Ecommerce-Website-Template-Free-1024x497.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A modern e-commerce website built with React and Node.js.</p>
+            </div>
+            <div class="project-item">
+                <img src="./asset/max-boom-header-thumbnail-6nhXy8x.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A responsive portfolio website for a freelance photographer.</p>
+            </div>
+            <div class="project-item">
+                <img src="./asset/Screenshot_2024-12-30-20-22-18-952_com.android.chrome.jpg" alt="Project 3">
+                <h3>Project 2</h3>
+                <p>A mobile responsive modern local restaurant website.</p>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for collaborations or inquiries.</p>
+        <div class="contact-info">
+            <a href="https://wa.me/2349136256415" target="_blank" class="btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
         </div>
+        <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Bright1-ai" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://ng.linkedin.com/in/bezly-bright-07445730a" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/ihioha53992?t=8FtnpV_PD5i8F4EpSUDgrA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 Ihioha Bright. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("service_zbi00ch"); // Initialize EmailJS with your User ID
+    })();
+</script>
 </html>
